@@ -1,6 +1,8 @@
 #include <iostream>
 #include <string>
-#include <chrono> // For microsecond timestamps
+#include <chrono>
+#include <map>
+#include <vector>
 
 // ==========================================
 // PHASE 1: MARKET DATA STRUCTURES
@@ -41,5 +43,7 @@ int main() {
     std::cout << "Price: " << newOrder.price << " | Quantity: " << newOrder.quantity << "\n";
     // 4. Print the order's Price and Quantity to the console to prove it exists.
 
+    // The Asks ( Sellers)q
+    std::map<double, std::vector<Order>> asks;
     return 0;
 }
